@@ -58,12 +58,12 @@ public class UIMenuController : MonoBehaviour
         }
         if (menuHighScoreText != null && cardsController != null)
         {
-            menuHighScoreText.text = "High Score: " + cardsController.HighScore;
+            menuHighScoreText.text = cardsController.HighScore.ToString();//"High Score: " + 
         }
         if (menuLastScoreText != null)
         {
             int lastScore = PlayerPrefs.GetInt(LastScoreKey, 0);
-            menuLastScoreText.text = "Last Score: " + lastScore;
+            menuLastScoreText.text = lastScore.ToString();//"Last Score: " + 
         }
     }
 }

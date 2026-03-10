@@ -323,11 +323,11 @@ public class CardsController : MonoBehaviour
         }
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text = score.ToString();//"Score: " + 
         }
         if (highScoreText != null)
         {
-            highScoreText.text = "High Score: " + highScore;
+            highScoreText.text = highScore.ToString(); //"High Score: " +
         }
         if (currentLevelText != null)
         {
